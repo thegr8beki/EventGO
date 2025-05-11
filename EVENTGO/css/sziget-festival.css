@@ -1,0 +1,104 @@
+body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background: url('/images/szigetfestival-2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff; /* White text for readability */
+    }
+
+    header {
+      text-align: center;
+      padding: 2.5rem;
+      background: linear-gradient(45deg, #00ffff, #ff00ff, #ff9900);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3rem;
+      font-weight: bold;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #0ff, 0 0 10px #f0f, 0 0 15px #ff0; }
+      to { text-shadow: 0 0 20px #0ff, 0 0 30px #f0f, 0 0 40px #ff0; }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+      border-radius: 10px;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    th, td {
+      border: 2px solid #00ffff;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 15px;
+      background-color: #1a003d;
+      transition: 0.3s;
+    }
+
+    th {
+      background: linear-gradient(90deg, #00ffff, #ff00ff);
+      color: #000;
+    }
+
+    tr:hover td {
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 25px rgba(255, 0, 255, 0.5);
+      transform: scale(1.02);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      color: #fff;
+      background: linear-gradient(45deg, #00ffff, #ff00ff, #ff9900);
+      background-size: 300% 300%;
+      animation: neon 4s linear infinite;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    @keyframes neon {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #ff9900;
+    }
+
+    .festival-image {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }

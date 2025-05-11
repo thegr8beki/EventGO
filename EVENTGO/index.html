@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventGO - Explore Global Celebrations</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="shortcut icon" href="/images/monogram-hq.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="container flex justify-between items-center">
+        <img src="/images/logo-no-background.png" alt="EventGO Logo" width="250px">
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+                <li class="relative">
+                    <button id="festival-button" class="hover:text-orange-500 focus:outline-none">Festivals</button>
+                    <!-- Dropdown Menu -->
+                    <ul id="festival-dropdown" class="dropdown hidden absolute bg-white shadow-lg rounded-lg mt-2">
+                        <li><a href="chinese-new-year.html" class="block px-4 py-2 hover:bg-purple-100">Chinese New Year</a></li>
+                        <li><a href="day-of-the-dead.html" class="block px-4 py-2 hover:bg-purple-100">Day of the Dead</a></li>
+                        <li><a href="kumbh-mela.html" class="block px-4 py-2 hover:bg-purple-100">Kumbh Mela</a></li>
+                        <li><a href="salon-du-chocolat.html" class="block px-4 py-2 hover:bg-purple-100">Salon du Chocolat</a></li>
+                        <li><a href="sziget-festival.html" class="block px-4 py-2 hover:bg-purple-100">Sziget Festival</a></li>
+                    </ul>
+                </li>
+                <li><a href="Payment.html" class="hover:text-orange-500">Sign Up</a></li>
+                <li><a href="about.html" class="hover:text-orange-500">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section relative h-96 overflow-hidden">
+    <div class="text-center text-white px-4">
+        <h1 class="text-5xl font-bold mb-4 text-center">Welcome to EventGO</h1>
+        <p class="text-xl max-w-2xl mx-auto text-center">Discover the world's most exciting festivals and cultural events.</p>
+    </div>
+</section>
+
+<!-- Sponsor Marquee Section -->
+<section class="marquee-section container mx-auto my-12 text-center">
+    <h2 class="text-center text-2xl font-bold mb-6">Our Proud Sponsors</h2>
+    <div class="marquee-container">
+        <div class="marquee flex justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="sponsor-logo">
+            <img src="/images/UNESCO-logo-364BB2205E-seeklogo.com_.png" alt="UNESCO" class="sponsor-logo">
+            <img src="/images/google-icon-logo-svgrepo-com.svg" alt="Google" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft" class="sponsor-logo">
+        </div>
+    </div>
+</section>
+
+<!-- Featured Festivals Section -->
+<section class="py-16 bg-gray-100 text-center">
+    <div class="container mx-auto px-4">
+        <center><h1 class="text-3xl font-bold text-center mb-12 text-purple-700">Featured Festivals</h1></center>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Festival 1 -->
+            <div class="festival-card">
+                <img src="/images/download.jpeg" alt="Chinese New Year">
+                <h3>Chinese New Year</h3>
+                <p>Celebrate the Lunar New Year with vibrant parades, dragon dances, and fireworks in China.</p>
+                <a href="chinese-new-year.html" class="bg-purple-700 text-white px-4 py-2 rounded-lg inline-block mt-4 hover:bg-purple-800">Read More</a>
+            </div>
+            <!-- Festival 2 -->
+            <div class="festival-card">
+                <img src="/images/day-of-the-dead-plastic-skulls_4x3.avif" alt="Day of the Dead">
+                <h3>Day of the Dead</h3>
+                <p>Honor loved ones with colorful altars, marigolds, and celebrations in Mexico.</p>
+                <a href="day-of-the-dead.html" class="bg-purple-700 text-white px-4 py-2 rounded-lg inline-block mt-4 hover:bg-purple-800">Read More</a>
+            </div>
+            <!-- Festival 3 -->
+            <div class="festival-card">
+                <img src="/images/file-20250114-15-oucsvl.avif" alt="Kumbh Mela">
+                <h3>Kumbh Mela</h3>
+                <p>Join millions of pilgrims in India for the world's largest spiritual gathering.</p>
+                <a href="kumbh-mela.html" class="bg-purple-700 text-white px-4 py-2 rounded-lg inline-block mt-4 hover:bg-purple-800">Read More</a>
+            </div>
+            <!-- Festival 4 -->
+            <div class="festival-card">
+                <img src="/images/811104-le-salon-du-chocolat-2022-les-photos.jpg" alt="Salon du Chocolat">
+                <h3>Salon du Chocolat</h3>
+                <p>Indulge in the world of chocolate with tastings, workshops, and exhibits in Paris.</p>
+                <a href="salon-du-chocolat.html" class="bg-purple-700 text-white px-4 py-2 rounded-lg inline-block mt-4 hover:bg-purple-800">Read More</a>
+            </div>
+            <!-- Festival 5 -->
+            <div class="festival-card">
+                <img src="/images/Sziget_festival_budapest.jpg" alt="Sziget Festival">
+                <h3>Sziget Festival</h3>
+                <p>Experience one of Europe's largest music festivals on an island in Budapest.</p>
+                <a href="sziget-festival.html" class="bg-purple-700 text-white px-4 py-2 rounded-lg inline-block mt-4 hover:bg-purple-800">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="py-12 bg-purple-700 text-white">
+    <div class="container mx-auto px-4">
+        <center><h2 class="text-3xl font-bold text-center mb-8">What People Say</h2></center>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="flex mb-4">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="mb-4">"Every year, Chinese New Year brings our entire family together in a way no other holiday does. The streets were alive with red lanterns, firecrackers, and dragon dances 🐲. This year was extra special — the temple fair was vibrant and I even got to write wishes on red paper. It’s a time of joy, hope, and delicious food like dumplings and rice cakes. Truly the most heartwarming celebration of the year!"</p>
+                <p class="font-semibold">- Eyoas</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="flex mb-4">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star-half-alt text-yellow-400"></i>
+                </div>
+                <p class="mb-4">"Attending the Kumbh Mela was one of the most spiritual experiences of my life. The crowds were massive, but so was the energy. Taking a holy dip in the Ganges during the Shahi Snan filled me with peace. Seeing sadhus, rituals, and people from all over the world was incredible. Just be prepared for the crowd — it’s intense but unforgettable. 🚩🛕"</p>
+                <p class="font-semibold">- Eyosafit</p>
+            </div>
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="flex mb-4">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="mb-4">"Día de los Muertos is not a sad event — it’s a celebration of life and memory. I helped decorate our family altar with marigolds, candles, and my grandfather’s favorite foods. The entire town lit up with color and music, and the cemetery at night was beautifully peaceful. I especially loved the face painting and sugar skulls. It’s a magical way to feel close to those we’ve lost. 🇲🇽🕯️"</p>
+                <p class="font-semibold">- Abigiya</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-purple-700 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">EventGO</h3>
+                <p>Connecting you to the world's most exciting festivals and events.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> +251-222-9304</p>
+                <p class="mb-2"><i class="fas fa-envelope mr-2"></i> support@eventgo.com</p>
+                <p><i class="fas fa-map-marker-alt mr-2"></i>G7Q9+392, Adama</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-orange-500 text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white hover:text-orange-500 text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-orange-500 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-orange-500 text-2xl"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p>&copy; 2025 EventGO. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
