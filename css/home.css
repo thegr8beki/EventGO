@@ -1,0 +1,523 @@
+/* General Styles */
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(120deg, #000000, #1a1a1a); /* Neon Dark Background */
+  color: #ffffff; /* White Text */
+}
+.logohome {
+  position: fixed;
+  height: auto;
+  left: 0px;
+  width: 250px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Navbar */
+header {
+  background-color: rgba(0, 0, 0, 0.85); /* Transparent Black */
+  padding: 1rem 0;
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon Glow */
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  margin: 0 1rem;
+}
+
+header ul li a {
+  color: #ffffff; /* White */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+  color: #00c6ff; /* Neon Blue */
+}
+
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 96vh;
+  overflow: hidden;
+  display: flex; /* Added */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  text-align: center; /* Center text alignment */
+}
+
+.hero-section .text-center {
+  position: relative;
+  z-index: 2;
+  color: #ffffff; /* White */
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #fc466b; /* Neon Pink */
+  text-shadow: 0 0 10px #fc466b, 0 0 20px #fc466b;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: #ffffff; /* White */
+  margin-top: 1rem;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-section video {
+  margin-top: 1rem;
+  max-width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon Glow */
+}
+
+/* Buttons */
+button, a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff; /* White */
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Neon Blue Gradient */
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+button:hover, a:hover {
+  background: linear-gradient(90deg, #fc466b, #3f5efb); /* Neon Pink Gradient */
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Neon Glow */
+}
+
+/* Sponsor Marquee Section */
+.marquee-section h2 {
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Centered text */
+  color: #1F2937; /* Dark Charcoal */
+  margin-bottom: 1.5rem;
+}
+
+.marquee-container {
+  background: linear-gradient(to right, #E0F2FE, #BFDBFE); /* Light Sky Blue Gradient */
+  padding: 2rem 0; /* Increased padding */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sponsor-logo {
+  height: 3rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.sponsor-logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* Festival Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(124, 58, 237, 0.5); /* Vibrant Purple Shadow */
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #7C3AED; /* Vibrant Purple */
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* FAQ Section */
+.faq-question {
+  background-color: #7C3AED; /* Vibrant Purple */
+  color: #F9FAFB; /* Soft White */
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+faq-question:hover {
+  background-color: #FB923C; /* Sunset Orange */
+}
+
+.faq-answer {
+  background-color: #E0F2FE; /* Light Sky Blue */
+  color: #1F2937; /* Dark Charcoal */
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.85); /* Transparent Black */
+  color: #ffffff; /* White */
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon Glow */
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00c6ff; /* Neon Blue */
+}
+
+footer p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #aaaaaa; /* Light Gray */
+}
+
+footer a {
+  color: #00c6ff; /* Neon Blue */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fc466b; /* Neon Pink */
+}
+
+footer i {
+  margin: 0 0.5rem;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  section h2 {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+  }
+
+  header ul li {
+    margin: 0.5rem 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+.sponsor-logo {
+  height: 3rem; /* Smaller height for mobile */
+}
+
+@media (min-width: 768px) {
+  .sponsor-logo {
+    height: 4rem; /* Larger height for tablets and desktops */
+  }
+}
+
+/* Centering Welcome Text */
+.hero-section .text-center {
+  text-align: center;
+}
+
+header.site-header {
+  background-color: #7C3AED; /* Vibrant Purple */
+  padding: 1rem 0;
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.site-header img {
+  width: 250px;
+}
+
+header.site-header nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header.site-header nav ul li a {
+  color: #F9FAFB; /* Soft White */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header.site-header nav ul li a:hover {
+  color: #FB923C; /* Sunset Orange */
+}
+
+header.site-header nav ul li.relative {
+  position: relative;
+}
+
+header.site-header nav ul li.relative button {
+  background: none;
+  border: none;
+  color: #F9FAFB; /* Soft White */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header.site-header nav ul li.relative button:hover {
+  color: #FB923C; /* Sunset Orange */
+}
+
+header.site-header nav ul li.relative .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+header.site-header nav ul li.relative .dropdown.show {
+  display: block;
+}
+
+header.site-header nav ul li.relative .dropdown li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #1F2937; /* Dark Charcoal */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+header.site-header nav ul li.relative .dropdown li a:hover {
+  background-color: #E0F2FE; /* Light Sky Blue */
+}
+
+.hero-section.relative {
+  position: relative;
+  height: 96vh;
+  overflow: hidden;
+}
+
+.hero-section.relative img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-section.relative .bg-purple-700 {
+  position: absolute;
+  inset: 0;
+  background-color: #7C3AED; /* Vibrant Purple */
+  background-opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section.relative .text-center {
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.hero-section.relative .text-center h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-section.relative .text-center p {
+  font-size: 1.25rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.hero-section.relative .text-center video {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Reviews Section */
+.reviews-section {
+  background: linear-gradient(135deg, #7C3AED, #FB923C); /* Vibrant Purple to Sunset Orange */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.reviews-section h2 {
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Centered text */
+  color: #ffffff; /* White text */
+  margin-bottom: 2rem;
+}
+
+.review-card {
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gradient for cards */
+  color: #ffffff; /* White text */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.6); /* Neon glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 0, 255, 0.6); /* Neon glow on hover */
+}
+
+/* Festivals Section */
+.festival-card {
+  background: linear-gradient(135deg, #00c6ff, #0072ff); /* Neon Blue Gradient */
+  color: #ffffff; /* White text */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.6); /* Neon glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.festival-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 0, 255, 0.6); /* Neon glow on hover */
+}
+
+.festival-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.festival-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* White text */
+}
+
+.festival-card p {
+  font-size: 1rem;
+  color: #e0e0e0; /* Light gray text */
+}
+
+/* Featured Festivals Section */
+.featured-festivals h2 {
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Centered text */
+  color: #7C3AED; /* Vibrant Purple */
+  margin-bottom: 2rem;
+}
+.dark-mode{
+  --pc: white;
+  --sc: black
+}
